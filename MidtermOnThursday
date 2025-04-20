@@ -1,0 +1,99 @@
+import javax.swing.*;
+import java.awt.*;
+
+public class MidtermOnThursday {
+JButton bnow, bmed, blib, bhelp, bserv, bok, b1, b2, b3, b4;
+JTextField tf;
+JRadioButton bmov,bmus,bvid,bdvd,bweb;
+JFrame f;
+
+    MidtermOnThursday(){
+       	f = new JFrame();
+        f.setTitle("335 Midterm on Thursday");
+
+
+        bnow = new JButton("Now Playing");
+        bnow.setBounds(0, 0, 120, 30);
+        f.add(bnow);
+
+        bmed = new JButton("Media Guide");
+        bmed.setBounds(0, 31, 120, 30);
+        f.add(bmed);
+
+        blib = new JButton("Library");
+        blib.setBounds(0, 62, 80, 30);
+        f.add(blib);
+
+        bhelp = new JButton("Help & Info");
+        bhelp.setBounds(0, 93, 110, 30);
+        f.add(bhelp);
+
+        bserv = new JButton("Services");
+        bserv.setBounds(0, 124, 90, 30);
+        f.add(bserv);
+
+
+        tf = new JTextField("");
+		tf.setBounds(120, 0, 230, 250);
+        f.add(tf);
+
+        b1 = new JButton("0");
+		b1.setBounds(350, 0, 45, 30);
+        f.add(b1);
+
+        b2 = new JButton("1");
+		b2.setBounds(396, 0, 45, 30);
+        f.add(b2);
+
+        b3 = new JButton("2");
+		b3.setBounds(350, 31, 45, 30);
+        f.add(b3);
+
+        b4 = new JButton("3");
+		b4.setBounds(396, 31, 45, 30);
+        f.add(b4);
+
+
+        bok = new  JButton("OK");
+        bok.setBounds(350, 61, 90, 188);
+        f.add(bok);
+
+        bmov = new JRadioButton("Movies");
+        bmov.setBounds(30, 250, 70, 30);
+        f.add(bmov);
+
+        bmus = new JRadioButton("Music");
+        bmus.setBounds(110, 250, 70, 30);
+        f.add(bmus);
+
+        bvid = new JRadioButton("Videos");
+        bvid.setBounds(180, 250, 70, 30);
+        f.add(bvid);
+
+        bdvd = new JRadioButton("DVD");
+        bdvd.setBounds(250, 250, 60, 30);
+        f.add(bdvd);
+
+        bweb = new JRadioButton("Web Pages");
+        bweb.setBounds(310, 250, 100, 30);
+        f.add(bweb);
+
+
+        ButtonGroup group = new ButtonGroup();
+        group.add(bmov);
+        group.add(bmus);
+        group.add(bvid);
+        group.add(bdvd);
+        group.add(bweb);
+
+
+        f.setLayout(null);
+        f.setSize(460, 320);
+        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        f.setVisible(true);
+
+    }
+    public static void main(String[] args){
+        new MidtermOnThursday();
+    }
+}
