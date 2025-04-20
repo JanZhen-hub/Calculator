@@ -1,0 +1,77 @@
+import javax.swing.*;
+ import java.awt.*;
+
+ public class IsFun {
+     JButton b1, b2, b3, b4, b5, b6, b7, b8, b9;
+     JLabel b10, b11, b12;
+     JTextField tf;
+     JFrame f;
+
+     IsFun() {
+         f = new JFrame();
+         f.setTitle("335 is fun");
+
+
+         b1 = new JButton("1");
+         b1.setBounds(29, 15, 50, 35);
+         f.add(b1);
+
+         b2 = new JButton("2");
+         b2.setBounds(85, 0, 50, 30);
+         f.add(b2);
+
+         b3 = new JButton("3");
+         b3.setBounds(85, 31, 50, 30);
+         f.add(b3);
+
+         b4 = new JButton("4");
+         b4.setBounds(136, 0, 50, 30);
+         f.add(b4);
+
+         b5 = new JButton("5");
+         b5.setBounds(136, 31, 50, 30);
+         f.add(b5);
+
+         b6 = new JButton("6");
+         b6.setBounds(190, 15, 50, 30);
+         f.add(b6);
+
+         b7 = new JButton("7");
+         b7.setBounds(245, 15, 50, 30);
+         f.add(b7);
+
+         b8 = new JButton("8");
+         b8.setBounds(0, 70, 350, 110);
+         f.add(b8);
+
+         b9 = new JButton("9");
+         b9.setBounds(0, 181, 350, 110);
+         f.add(b9);
+
+         b10 = new JLabel("Label 1");
+         b10.setBounds(0, 290, 60, 28);
+         f.add(b10);
+
+         b11 = new JLabel("Label 2");
+         b11.setBounds(350, 290, 60, 27);
+         f.add(b11);
+
+         b12 = new JLabel("Label 3");
+         b12.setBounds(350, 165, 60, 28);
+         f.add(b12);
+
+         tf = new JTextField();
+         tf.setBounds(50,293, 300, 20);
+ 		f.add(tf);
+
+
+         f.setSize(420, 360);
+         f.setLayout(null);
+         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+         f.setVisible(true);
+     }
+
+     public static void main(String[] args) {
+         new IsFun();
+     }
+ }
