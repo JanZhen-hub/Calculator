@@ -1,0 +1,67 @@
+import javax.swing.*;
+ import java.awt.*;
+
+ public class GoodThingIStudied {
+
+     JLabel l;
+     JFrame f;
+     JButton b1,b2,b3,b4,b5,b6,b7;
+
+     GoodThingIStudied(){
+
+
+         f = new JFrame();
+         f.setTitle("Good thing I studied!");
+
+
+         l = new JLabel("Type stuff: ");
+         l.setForeground(Color.blue);
+         l.setBounds(80, 250, 100, 30);
+         f.add(l);
+
+
+  		JTextField tf = new JTextField("");
+ 		tf.setBounds(150, 250, 170, 30);
+ 		f.add(tf);
+
+
+         b1 = new JButton("Button1");
+         b1.setBounds(0, 0, 135, 30);
+         f.add(b1);
+
+         b2 = new JButton("Button2");
+         b2.setBounds(135, 0, 135, 30);
+ 		f.add(b2);
+
+
+         b3 = new JButton("Button3");
+         b3.setBounds(270, 0, 135, 30);
+ 		f.add(b3);
+
+         b4 = new  JButton("Button4");
+         b4.setBounds(0, 30, 200, 100);
+ 		f.add(b4);
+
+         b5 = new JButton("Button5");
+         b5.setBounds(195, 30, 210, 100);
+ 		f.add(b5);
+
+         b6 = new JButton("Button6");
+         b6.setBounds(0, 130, 200, 100);
+ 		f.add(b6);
+
+         b7 = new JButton("Button7");
+         b7.setBounds(200, 130, 205, 100);
+ 		f.add(b7);
+
+
+         f.setSize(425, 340);
+         f.setLayout(null);
+         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+         f.setVisible(true);
+
+     }
+  public static void main(String[] args){
+            new GoodThingIStudied();
+         }
+ }
